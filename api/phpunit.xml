@@ -1,0 +1,27 @@
+<phpunit>
+    <coverage>
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <exclude>
+            <directory suffix=".php">src/vendor/</directory>
+        </exclude>
+    </coverage>
+    <php>
+        <env name="MYSQL_ROOT_PASSWORD" value="test" force="true"/>
+        <env name="MYSQL_DATABASE" value="test" force="true"/>
+        <env name="MYSQL_USER" value="test" force="true"/>
+        <env name="MYSQL_PASSWORD" value="test" force="true"/>
+        <env name="MYSQL_HOST" value="database" force="true"/>
+        <env name="RABBITMQ_HOST" value="rabbitmq" force="true"/>
+        <env name="RABBITMQ_PORT" value="5672" force="true"/>
+        <env name="RABBITMQ_PASSWORD" value="password" force="true"/>
+        <env name="RABBITMQ_USER" value="user" force="true"/>
+        <env name="RABBITMQ_QUEUE" value="queue_test" force="true"/>
+        <env name="REDIS_PASSWORD" value="password_test" force="true"/>
+        <env name="REDIS_SCHEME" value="scheme_test" force="true"/>
+        <env name="REDIS_HOST" value="host_test" force="true"/>
+        <env name="REDIS_PORT" value="port_test" force="true"/>
+        <env name="QUOTES_FILE_PATH" value="/var/www/api/tests/quotes.json" force="true"/>
+    </php>
+</phpunit>

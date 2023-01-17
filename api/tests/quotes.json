@@ -1,0 +1,40 @@
+{
+  "quotes": [
+    {
+      "quote": "Test quote file 3.",
+      "author": "Kevin Kruse"
+    },
+    {
+      "quote": "Test quote file 4.",
+      "author": "Napoleon Hill"
+    },
+    {
+      "quote": "Test quote file 5.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Test quote file 2.",
+      "author": "Robert Frost"
+    },
+    {
+      "quote": "Test quote file 1.",
+      "author": "Robert Frost"
+    },
+    {
+      "quote": "Test quote file 6.",
+      "author": "Robert Frost"
+    },
+    {
+      "quote": "Test quote file 7.",
+      "author": "George Addair"
+    },
+    {
+      "quote": "Test quote 8.",
+      "author": "Plato"
+    },
+    {
+      "quote": "Test quote 9.",
+      "author": "Maimonides"
+    }
+  ]
+}
