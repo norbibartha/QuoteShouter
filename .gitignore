@@ -5,3 +5,4 @@ api/vendor
 api/.phpunit.result.cache
 consumer/vendor
 consumer/.phpunit.result.cache
+.idea
