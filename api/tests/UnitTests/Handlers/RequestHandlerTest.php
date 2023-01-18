@@ -44,6 +44,7 @@ class RequestHandlerTest extends BaseTestCase
                 'expectedResults' => [
                     'pathVariables' => ['', 'shout', 'test-name'],
                     'queryParams' => ['limit' => '2'],
+                    'body' => [],
                 ],
             ],
             [

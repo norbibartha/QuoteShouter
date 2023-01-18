@@ -78,6 +78,8 @@ class RequestHandler
 
         $parameters = [
             'pathVariables' => $pathVariables,
+            'queryParams' => [],
+            'body' => [],
         ];
 
         if (!empty($queryParams)) {

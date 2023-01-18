@@ -2,7 +2,7 @@
 
 use App\Handlers\RequestHandler;
 
-require_once realpath('../vendor/autoload.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $handler = new RequestHandler();
 $requestBody = file_get_contents('php://input');
