@@ -14,8 +14,8 @@ dev:
 consume:
 	# Start consumers to actually consume messages
 	# Use -d option in order to the commands execute in the background
-	docker exec consumer-1 php src/consume.php -d
-	docker exec consumer-2 php src/consume.php -d
+	docker exec -d consumer-1 php src/consume.php
+	docker exec -d consumer-2 php src/consume.php
 
 run-unit-tests:
 	# Run unit tests on api and consumer projects
