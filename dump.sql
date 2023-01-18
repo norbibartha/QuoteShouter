@@ -36,7 +36,7 @@ VALUES
     ('Time stays long enough for anyone who will use it.', 5),
     ('Learning never exhausts the mind.', 5),
     ('Common sense is that which judges the things given to it by other senses.', 5),
-    ('A goal is a dream with a deadline.', 6),
+    ('A goal is a dream with a deadline.', 6);
 
 
 
