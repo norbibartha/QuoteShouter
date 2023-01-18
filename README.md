@@ -1,18 +1,92 @@
 # Project Description
 
+This is a simple REST API, written in Vanilla PHP that returns shouted quotes by famous people. 
+
+Simple quote:
 
 
+    If life were predictable it would cease to be life, and be without flavor.
 
 
+Shouted quote:
 
 
+    IF LIFE WERE PREDICTABLE IT WOULD CEASE TO BE LIFE, AND BE WITHOUT FLAVOR!
 
 
+The application has two different data sources, MySQL as main database and
+a json file (it should have been a 3rd-party API but for simplicity we used a sample).
+There is implemented a caching system, which consists from Redis, RabbitMQ and two consumers subscribed to the same queue.
+Each entry in the cache is valid for 12 hours.
+
+## Project installation
+
+1. Clone this repository
+
+    ```
+    git clone git@github.com:norbibartha/QuoteShouter.git
+    ```
+
+2. Install docker and docker-compose
+
+    ```
+    sudo apt-get update
+    sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    sudo apt install docker-ce
+    sudo usermod -aG docker ${USER}
+    sudo apt install docker-compose
+    ```
+
+3. Install Make package
+
+    ```
+    sudo apt install make
+    ```
+
+4. Generate local development environment
+
+    ```
+   cd QuoteShouter
+   make dev
+   ```
+
+## Debugging
+
+At this point you have the working development environment, the API is accessible at:
+
+```
+localhost:8080
+```
+
+If you want to check what is going on in RabbitMq, you can do it by accessing the following address from you browser:
+
+```
+http://localhost:15672
+```
+
+This is the RabbitMq management interface.
 
 
+## Useful commands:
 
+#### Run unit tests:
 
+```
+make run-unit-tests
+```
 
+#### Run integration tests:     
+```
+make run-integration-tests
+```
+
+#### Start consumers to actually consume the messages from RabbitMq queue:
+
+```
+make consume
+```
 
 # Project Requirements
 
